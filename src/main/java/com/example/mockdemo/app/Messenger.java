@@ -12,18 +12,30 @@ public class Messenger {
 		this.ms = ms;
 	}
 
-	/*Tymczasowo -> Pozniej to zniknie */
-	public Messenger() {
-		// TODO Auto-generated constructor stub
-	}
-
 	public int testConnection(String server) {
-		return 1;
+		switch (ms.checkConnection(server)){
+            case FAILURE:
+                return 1;
+            case SUCCESS:
+                return 0;
+        }
+        return 1;
 	}
 
-	public int sendMessage(String server, String message) {
+	public int testSending(String server, String message) {
 
-		int result = 1;
-		return result;
-	}
+        try {
+            SendingStatus sendStatus = ms.send(server, message);
+            switch (sendStatus) {
+                case SENT:
+                    return 0;
+                case SENDING_ERROR:
+                    return 1;
+                default:
+                    return -1;
+            }
+        } catch (MalformedRecipientException e) {
+            return 2;
+        }
+    }
 }
