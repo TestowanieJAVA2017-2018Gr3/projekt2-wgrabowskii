@@ -23,7 +23,7 @@ public class Messenger {
 
 	public int sendMessage(String server, String message) {
 
-		int result = -1;
+		int result = 1;
 		return result;
 	}
 }

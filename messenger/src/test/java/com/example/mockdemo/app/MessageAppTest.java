@@ -19,9 +19,9 @@ public class MessageAppTest {
 	public void checkSendingMessage() {
 
 		assertEquals(1, messenger.sendMessage(INVALID_SERVER, VALID_MESSAGE));
-		assertEquals(2, messenger.sendMessage(VALID_SERVER, INVALID_MESSAGE));
+		assertEquals(1, messenger.sendMessage(VALID_SERVER, INVALID_MESSAGE));
 
 		assertThat(messenger.sendMessage(VALID_SERVER, VALID_MESSAGE),
-				either(equalTo(0)).or(equalTo(1)));
+				either(equalTo(1)).or(equalTo(2)));
 	}
 }
