@@ -1,11 +1,11 @@
 # Testowanie aplikacji JAVA 2017-2018
-## Projekt 2 (Maven, JUnit oraz atrapy) 
+## Projekt 2 (Maven, JUnit oraz atrapy)
 
 -----------------------
 ### REGUŁY GRY
 
 1. Wybieramy **jedno** z poniższych zadań. Zadania różnią się poziomem trudności i są inaczej punkto-
-wane. 
+wane.
 
 2. Każdy projekt ma być wykonany przy użyciu narzędzia Maven! Projekt **nie powinien zawierać pliku jar oraz folderu
 target**.
@@ -39,7 +39,7 @@ Pod ocenę będą brane pod uwagę następujące elementy:
 - (0.5 pkt) Pokrycie kodu (w przypadku ręcznie stworzonych atrap).
 - (1 pkt) Styl kodu.
 
-Ponadto, jako punkty dodatkowe będą brane następujące elementy: 
+Ponadto, jako punkty dodatkowe będą brane następujące elementy:
 - (1 pkt) Użycie różnych rodzaji atrap.
 - (1 pkt) Wynik z portalu BetterCodeHub.
 - (2 pkt) Inne technologie dotyczące atrap, nie pokazywane na zajęciach (co najmniej po 5 testów każda z nich).
@@ -56,24 +56,24 @@ punktacji zadania!)
 
 **Projekt 2** (14 pkt)
 
-Przetestuj przy użyciu atrap klasę, która wygląda następująco: 
+Przetestuj przy użyciu atrap klasę, która wygląda następująco:
 
 ```
 public class UserServiceImpl{
   private UserDAO userDAO;
   privare Security secuirty;
-  
+
   public void assignPassword(User user) throws Exception {
     String passwordMD5 = security.md5(user.getPassword());
     user.setPassword(passwordMD5);
     userDAO.updateUser(user);
   }
-  
+
   public UserServiceImpl(UserDAO dao, Security security){
     this.UserDAO = dao;
     this.security = security;
   }
-  
+
 }
 ```
 
@@ -87,7 +87,7 @@ Pod ocenę będą brane pod uwagę następujące elementy:
 - (0.5 pkt) Pokrycie kodu (w przypadku ręcznie stworzonych atrap).
 - (1 pkt) Styl kodu.
 
-Ponadto, jako punkty dodatkowe będą brane następujące elementy: 
+Ponadto, jako punkty dodatkowe będą brane następujące elementy:
 - (1 pkt) Użycie różnych rodzaji atrap.
 - (1 pkt) Wynik z portalu BetterCodeHub.
 - (2 pkt) Inne technologie dotyczące atrap, nie pokazywane na zajęciach (co najmniej po 5 testów każda z nich).
@@ -126,7 +126,7 @@ Pod ocenę będą brane pod uwagę następujące elementy:
 - (0.5 pkt) Pokrycie kodu (w przypadku ręcznie stworzonych atrap).
 - (1 pkt) Styl kodu.
 
-Ponadto, jako punkty dodatkowe będą brane następujące elementy: 
+Ponadto, jako punkty dodatkowe będą brane następujące elementy:
 - (1 pkt) Użycie różnych rodzaji atrap.
 - (1 pkt) Wynik z portalu BetterCodeHub.
 - (2 pkt) Inne technologie dotyczące atrap, nie pokazywane na zajęciach (co najmniej po 5 testów każda z nich).
@@ -159,7 +159,7 @@ Pod ocenę będą brane pod uwagę następujące elementy:
 - (0.5 pkt) Pokrycie kodu (w przypadku ręcznie stworzonych atrap).
 - (1 pkt) Styl kodu.
 
-Ponadto, jako punkty dodatkowe będą brane następujące elementy: 
+Ponadto, jako punkty dodatkowe będą brane następujące elementy:
 - (1 pkt) Użycie różnych rodzaji atrap.
 - (1 pkt) Wynik z portalu BetterCodeHub.
 - (2 pkt) Inne technologie dotyczące atrap, nie pokazywane na zajęciach (co najmniej po 5 testów każda z nich).
@@ -176,7 +176,7 @@ punktacji zadania!)
 
 **Projekt 5** (22 pkt)
 
-Przetestuj system rezerwacji z poprzedniego projektu, zakładając, że wszystko odbywa się w jakimś systemie bazodanowym. Na przykład mogą się zdarzyć następujące sytuacje: 
+Przetestuj system rezerwacji z poprzedniego projektu, zakładając, że wszystko odbywa się w jakimś systemie bazodanowym. Na przykład mogą się zdarzyć następujące sytuacje:
 
 - Wyświetlenie wszystkich rezerwacji danego użytkownika.
 - Wyświetlenie możliwych wolnych miejsc do dokonania rezerwacji.
@@ -194,7 +194,7 @@ Pod ocenę będą brane pod uwagę następujące elementy:
 - (0.5 pkt) Pokrycie kodu (w przypadku ręcznie stworzonych atrap).
 - (1 pkt) Styl kodu.
 
-Ponadto, jako punkty dodatkowe będą brane następujące elementy: 
+Ponadto, jako punkty dodatkowe będą brane następujące elementy:
 - (1 pkt) Użycie różnych rodzaji atrap.
 - (1 pkt) Wynik z portalu BetterCodeHub.
 - (2 pkt) Inne technologie dotyczące atrap, nie pokazywane na zajęciach (co najmniej po 5 testów każda z nich).
@@ -227,7 +227,7 @@ Pod ocenę będą brane pod uwagę następujące elementy:
 - (0.5 pkt) Pokrycie kodu (w przypadku ręcznie stworzonych atrap).
 - (1 pkt) Styl kodu.
 
-Ponadto, jako punkty dodatkowe będą brane następujące elementy: 
+Ponadto, jako punkty dodatkowe będą brane następujące elementy:
 - (1 pkt) Użycie różnych rodzaji atrap.
 - (1 pkt) Wynik z portalu BetterCodeHub.
 - (2 pkt) Inne technologie dotyczące atrap, nie pokazywane na zajęciach (co najmniej po 5 testów każda z nich).
@@ -239,4 +239,3 @@ punktacji zadania!)
 - Historia projektu w repozytorium.
 - Różnorodne asercje (co najmniej 5 różnych).
 - Struktura projektu.
-
