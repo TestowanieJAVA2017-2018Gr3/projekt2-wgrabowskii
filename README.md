@@ -1,6 +1,9 @@
 # Testowanie aplikacji JAVA 2017-2018
 ## Projekt 2 (Maven, JUnit oraz atrapy)
 
+[![Build Status](https://travis-ci.com/TestowanieJAVA2017-2018Gr3/projekt2-wgrabowskii.svg?branch=master)](https://travis-ci.com/TestowanieJAVA2017-2018Gr3/projekt2-wgrabowskii)
+[![BCH compliance](https://bettercodehub.com/edge/badge/wgrabowskii/projekt2-wgrabowskii?branch=master)](https://bettercodehub.com/)
+[![Maintainability](https://api.codeclimate.com/v1/badges/d4d2e3829831160ba20c/maintainability)](https://codeclimate.com/github/wgrabowskii/projekt2-wgrabowskii/maintainability)
 -----------------------
 ### REGUŁY GRY
 
